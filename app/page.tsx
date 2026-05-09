@@ -65,6 +65,71 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+      {/* What RoofScope AI Does Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
+              What RoofScope AI Does
+            </h2>
+            <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+              RoofScope AI is an AI-assisted roofing workflow that turns a property address into an estimate-ready roofing report, 
+              bridging measurement into the contractor workflow with quote generation, insurance documentation, and job-specific next steps.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Feature Card 1 */}
+              <div className="bg-white rounded-lg shadow-md p-8 border-t-4 border-blue-600">
+                <div className="text-4xl mb-4">📍</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Address to Roof Context
+                </h3>
+                <ul className="text-gray-600 space-y-2 text-sm">
+                  <li>• Address search with Google Maps aerial imagery</li>
+                  <li>• Visual roof type and material confirmation</li>
+                  <li>• Job type selection and property notes</li>
+                </ul>
+              </div>
+
+              {/* Feature Card 2 */}
+              <div className="bg-white rounded-lg shadow-md p-8 border-t-4 border-blue-600">
+                <div className="text-4xl mb-4">📐</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Measurement to Estimate
+                </h3>
+                <ul className="text-gray-600 space-y-2 text-sm">
+                  <li>• Deterministic measurement engine</li>
+                  <li>• Roof area, pitch, and waste factor calculations</li>
+                  <li>• Line items with price ranges and risk notes</li>
+                </ul>
+              </div>
+
+              {/* Feature Card 3 */}
+              <div className="bg-white rounded-lg shadow-md p-8 border-t-4 border-blue-600">
+                <div className="text-4xl mb-4">📋</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Contractor-Ready Report
+                </h3>
+                <ul className="text-gray-600 space-y-2 text-sm">
+                  <li>• Insurance-ready documentation</li>
+                  <li>• Contractor checklist with next steps</li>
+                  <li>• Exportable report with editable assumptions</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Transparency Note */}
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+              <p className="text-sm text-gray-700">
+                <strong>Transparency Note:</strong> The current MVP uses calibration and sample measurement logic with transparent assumptions 
+                rather than production-grade satellite measurement. The architecture includes future integration with Google Solar API for 
+                precise roof segment data and property-attribute providers (Vexcel, Nearmap) for verified roof material, shape, age, and condition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* How It Works Section */}
       <section id="how-it-works" className="py-20">
@@ -278,7 +343,7 @@ export default function LandingPage() {
       <footer className="bg-gray-900 text-gray-400 py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm">
-            Built for JobNimbus AI Hackathon 2026 · Created by Tien Nguyen Borland · <a href="mailto:borlandtien@gmail.com" className="hover:text-white transition-colors">borlandtien@gmail.com</a> · <a href="https://github.com/nguy2819" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
+            Built for JobNimbus AI Hackathon 2026 · Created by Tien Nguyen Borland · <a href="mailto:borlandtien@gmail.com" className="hover:text-white transition-colors">borlandtien@gmail.com</a> · <a href="https://github.com/nguy2819/roofscope-ai-jobnimbus-hackathon" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
           </p>
         </div>
       </footer>

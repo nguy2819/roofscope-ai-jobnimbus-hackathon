@@ -27,7 +27,7 @@ export default function LandingNavbar() {
               How It Works
             </button>
             <a
-              href="https://github.com/yourusername/roofscope-ai"
+              href="https://github.com/nguy2819/roofscope-ai-jobnimbus-hackathon"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-200 transition-colors"
